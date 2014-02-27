@@ -24,7 +24,7 @@ Configure the path to your data_bag directory:
 # your_cookbook/spec/spec_helper.rb
 
 ChefSpecSupport.configure do |config|
-  config.data_bag_load_path = File.expand_path("../../data_bags", __FILE__)
+  config.data_bag_load_path = File.expand_path("/path/to/data_bags", __FILE__)
 end
 
 ```
