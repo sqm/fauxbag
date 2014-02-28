@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'chefspec-support/version'
+require 'fauxbag/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "chefspec-support"
-  spec.version       = ChefSpecSupport::VERSION
+  spec.name          = "fauxbag"
+  spec.version       = Fauxbag::VERSION
   spec.authors       = ["Squaremouth"]
   spec.email         = ["developers@squaremouth.com"]
   spec.summary       = %q{Support library for ChefSpec.}
