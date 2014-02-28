@@ -1,7 +1,7 @@
 require 'multi_json'
 require 'rspec'
 
-module ChefSpecSupport
+module Fauxbag
   # Parse example data bag item JSON file
   #
   # @param [String] Data Bag Directory

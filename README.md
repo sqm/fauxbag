@@ -1,12 +1,12 @@
-# ChefSpecSupport
+# Fauxbag
 
-Adds `load_databag_json` support method to use with [ChefSpec](http://code.sethvargo.com/chefspec/)
+Adds `load_databag_json` support method to use with Data Bags and [ChefSpec](http://code.sethvargo.com/chefspec/)
 
 ## Installation and Configuration
 
 Add this line to your Gemfile:
 ```ruby
-  gem 'chefspec-support'
+  gem 'fauxbag'
 ```
 
 And then execute:
@@ -14,10 +14,10 @@ And then execute:
   $ bundle
 ```
 
-Include `chefspec-support` in your `spec_helper.rb` file.
+Include `fauxbag` in your `spec_helper.rb` file.
 ```ruby
 # mycookbook/spec/spec_helper.rb
-require 'chefspec-support'
+require 'fauxbag'
 ```
 
 ## Usage
@@ -54,20 +54,19 @@ Using the data_bag fixtures:
 require 'spec_helper'
 
 describe 'mycookbook::default' do
-  let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
+  it "installs something for all users" do
+    # Loads JSON from mycookbook/spec/data_bags/users/hansolo.json
+    fauxbag = load_databag_json('users', 'hansolo')
+    stub_data_bag_item('users', 'hansolo').and_return(fauxbag)
 
-  # use fixture data bag
-  let(:users_hansolo_databag_item) { load_databag_json('users', 'hansolo')  } 
-
-  before do
-    stub_data_bag_item('users', 'hansolo').and_return(users_hansolo_databag_item)
+    # ... rest of the spec test with expectation
   end
 end
 ```
 
 ## Contributing
 
-1. Fork it ( http://github.com/sqm/chefspec-support/fork )
+1. Fork it ( http://github.com/sqm/fauxbag/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
