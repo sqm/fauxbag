@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Fauxbag::VERSION
   spec.authors       = ["Squaremouth"]
   spec.email         = ["developers@squaremouth.com"]
-  spec.summary       = %q{Support library for ChefSpec.}
-  spec.description   = %q{Support library for ChefSpec.}
+  spec.summary       = %q{Fauxbag library for ChefSpec.}
+  spec.description   = %q{Fauxbag library for ChefSpec.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
