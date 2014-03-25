@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fauxbag (0.0.1)
+    fauxbag (0.0.2)
       chefspec
       multi_json
 
@@ -52,7 +52,7 @@ GEM
       net-ssh
       ohai
     hashie (2.0.5)
-    highline (1.6.20)
+    highline (1.6.21)
     i18n (0.6.9)
     ipaddress (0.8.0)
     json (1.8.1)
@@ -65,7 +65,7 @@ GEM
     mixlib-log (1.6.0)
     mixlib-shellout (1.3.0)
     moneta (0.6.0)
-    multi_json (1.8.4)
+    multi_json (1.9.2)
     net-ssh (2.8.0)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
