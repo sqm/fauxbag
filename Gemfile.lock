@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fauxbag (0.0.2)
+    fauxbag (0.1.0)
       chefspec
       multi_json
 
