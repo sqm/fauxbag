@@ -26,9 +26,19 @@ The expected location for data bag items is a `data_bags` folder in the `spec` d
 
 `spec/data_bags/data_bag_name/data_bag_item.json`
 
-Using the `load_databag_item` method requires the arguments of the `data_bag_name` folder and the `data_bag_item` without the `.json`:
+### Methods
+
+##### load_databag_item
+
+The `load_databag_item` method requires the arguments of the `data_bag_name` folder and the `data_bag_item` without the `.json`:
 
 `load_databag_json(data_bag_name, data_bag_item)`
+
+##### load_chefzero_databag
+
+The `load_chefzero_databag` method requires the data bag group (such as users) and returns all items as a single hash to be used with Chef-Zero: 
+
+`load_chefzero_databag(data_bag_name)`
 
 ## Example
 
