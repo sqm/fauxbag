@@ -44,6 +44,6 @@ module Fauxbag
   #
   # @return [String] Path to the spec file
   def current_example_dir
-    File.dirname(File.expand_path(example.metadata[:file_path]))
+    File.dirname(File.expand_path(RSpec.current_example.metadata[:file_path]))
   end
 end
