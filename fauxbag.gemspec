@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 1.9'
 
-  spec.add_dependency 'chefspec'
+  spec.add_dependency 'chefspec', '~> 4.0.x'
   spec.add_dependency 'multi_json'
 
   spec.add_development_dependency "bundler", "~> 1.5"
