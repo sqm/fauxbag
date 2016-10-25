@@ -20,12 +20,12 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 1.9'
 
-  spec.add_dependency 'chefspec', '~> 4.0.x'
+  spec.add_dependency 'chefspec', '>= 4'
   spec.add_dependency 'multi_json'
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "pry"
-  spec.add_development_dependency "pry-debugger"
+  spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
 end
