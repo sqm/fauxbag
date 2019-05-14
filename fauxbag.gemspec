@@ -23,7 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'chefspec', '>= 4'
   spec.add_dependency 'multi_json'
 
-  spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "rake"
